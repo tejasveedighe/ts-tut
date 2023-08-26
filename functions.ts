@@ -35,3 +35,25 @@ type UserType = {
 let func2 = (user: UserType): void => {
 	console.log(user.username);
 };
+
+// prototype function
+type myFunc = (a:number, b:string) => void;
+
+let write: myFunc = (num, str) => {
+    console.log(num, str)
+}
+
+// either dark or light no other value
+type UserWithTheme = {
+	username: string, 
+	age: number,
+	phone?:string,
+	theme: "dark" | "light"
+}
+
+const userWithTheme : UserWithTheme = {
+	username: "Tejasvee",
+	age: 23,
+	theme: "dark"
+	// theme: "pink"
+}
