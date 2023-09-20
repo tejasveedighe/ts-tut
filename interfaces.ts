@@ -32,3 +32,19 @@ type Employee = {
 interface User extends Employee {
 	isAdmin: boolean;
 }
+
+
+
+// adding new properties to the existing interface is possible
+interface WindowType {
+	ts: string;
+}
+
+interface WindowType {
+	newProp: number;
+}
+
+let newWindow: WindowType = {
+	newProp: 10,
+	ts: "tejasvee",
+};

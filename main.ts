@@ -15,6 +15,16 @@ let strArr: string[];
 let strOrNumArr: (string | number)[];
 strOrNumArr = [1, "string", 2];
 
+function printId(id: number | string) {
+	// console.log(id.toUpperCase());
+	if (typeof id === "string") {
+		console.log(id.toUpperCase());
+	} else if (typeof id === "number") {
+		console.log(id);
+	}
+}
+
+
 // Objects
 let userObject: {
 	username: string;
